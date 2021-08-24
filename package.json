@@ -1,0 +1,38 @@
+{
+  "name": "partithura-data-sync-injector",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "~14"
+  },
+  "bin": "./bin/exec.js",
+  "scripts": {
+    "build": "yarn run clean:build && tsc -b",
+    "build:watch": "yarn run clean:build && tsc -b --incremental --watch",
+    "clean:build": "rm -rf dist/ && rm -rf tsconfig.tsbuildinfo",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/node": "^14",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "jest-junit": "^12.2.0",
+    "lint-staged": "^11.1.2",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}

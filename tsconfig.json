@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2019",
+    "importHelpers": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "declaration": false,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "./**/*.ts", "test/**.test.js", "jest.config.js"  ],
+  "exclude": [
+    "node_modules/**/*",
+    "src/handlers/**/*",
+    ".vscode/**/*",
+    "dist"
+  ]
+}
